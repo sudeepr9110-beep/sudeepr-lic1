@@ -13,6 +13,7 @@ For the transistor to act as an amplifier, it must be in the saturation region, 
 VSD > VSG-|VTP|
 
  In saturation, the drain current is expressed as:
+ 
  ID ​= (1/2)*​μp​Cox​*(W/l)*​(VSG​−∣VTP​∣)^2
  
  A small AC signal is applied to the gate, resulting in a small variation in VSG,, which in turn changes the drain current. The varying current through the load results in a varying output voltage, leading to amplification.
