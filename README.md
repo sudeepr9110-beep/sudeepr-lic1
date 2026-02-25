@@ -34,4 +34,4 @@ Where Vov = VSG-|VTP| is a overdrive voltage
 The power  dispersion in the circuit is given by 
 P = VDD * ID
 # DC Analysis
-![Image description](Screenshot 2026-02-24 224159.png)
+![Image description](https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/Screenshot%202026-02-24%20224159.png?raw=true)
