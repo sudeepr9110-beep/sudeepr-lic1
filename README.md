@@ -5,7 +5,7 @@ To implement and analyze a PMOS-based Common Source amplifier in LTSpice using t
 ## Theory
 A Common Source (CS) amplifier using a PMOS transistor is a single-stage voltage amplifier in which the source terminal is common to both input and output. In this arrangement, the input is applied to the gate, and the output is taken from the drain, while the source is tied to the supply voltage VDD.
 
-For a PMOS transistor, the current flows when:
+For a PMOS transistor, the current flows when :
 VSG > |VTP|
 
 For the transistor to act as an amplifier, it must be in the saturation region, where the drain current is nearly constant and controlled by the gate voltage. For saturation, the transistor satisfies the following condition:
