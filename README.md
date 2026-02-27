@@ -56,7 +56,7 @@ Channel Length (L) = 180nm.
 Supply Voltage (Vdd) = 2V.
 
 # DC Analysis
-DC analysis of the PMOS Common Source amplifier is employed to find its operating point, also known as the Q-point. In this analysis, only DC voltages and currents are taken into account, and the AC signal is assumed to be zero. The source is tied to ( VDD ), and a proper gate bias voltage is applied such that ( VSG > |VTP| ), thus turning the transistor ON and keeping it in the saturation region. The drain current ( ID ) is determined using the saturation current equation, and the output DC voltage is determined as ( VD = VDD - ID RD ). The bias is adjusted to ensure that the transistor is in saturation, the output voltage is near the middle of the supply voltage for maximum signal swing, and the power dissipation ( P = VDD/ ID ) is within the defined limit.
+DC analysis of the PMOS Common Source amplifier is employed to find its operating point, also known as the Q-point. In this analysis, only DC voltages and currents are taken into account, and the AC signal is assumed to be zero. The source is tied to ( VDD ), and a proper gate bias voltage is applied such that ( VSG > |VTP| ), thus turning the transistor ON and keeping it in the saturation region. The drain current ( ID ) is determined using the saturation current equation, and the output DC voltage is determined as ( VD = VDD - IDRD ). The bias is adjusted to ensure that the transistor is in saturation, the output voltage is near the middle of the supply voltage for maximum signal swing, and the power dissipation ( P = VDD/ ID ) is within the defined limit.
 # DC Sweep
 DC Sweep analysis is used to see how the Common Source amplifier works when a DC voltage changes over a range. Usually, the gate voltage (VGS) is varied while keeping other values constant. This allows us to observe how the drain current (ID) and output voltage (VD) respond. When VGS is below the threshold voltage, the MOSFET stays OFF, and the drain current is almost zero. As VGS rises above the threshold, the MOSFET turns ON, and the drain current increases. This reveals different regions of operation, including cutoff, triode, and saturation. This analysis helps identify the right operating point (Q-point) and understand the static characteristics of the amplifier.
 # AC Analysis
@@ -73,7 +73,7 @@ Step 2: Add components
 Place these parts in the circuit:
 
 * NMOS transistor (180 nm CMOS model)
-* Resistor ( R_1 = 1k\Omega )
+* Resistor ( Rd= 2k )
 * Two voltage sources (V1 and V2)
 * Ground
 
@@ -82,7 +82,7 @@ Step 3: Connect and set values
 * Set V1 = 2V (DC supply).
 * Set V2 = SINE(1.4 10m 1k)
   (1.4V DC bias, 10mV signal, 1kHz frequency).
-* Connect R1 (1kΩ) between V1 and drain.
+* Connect Rd (2kΩ) between V1 and drain.
 
 Step 4: Add simulation commands
 
@@ -100,9 +100,9 @@ View the results in the waveform window.
 
 Step 6: Check results
 
-* In DC analysis, check ( VGSP = VDD * ID)
-* In AC analysis, check the gain graph.
-* In Transient analysis, check if the output waveform is amplified and inverted.
+* In DC analysis, check ( VGS P = VDD * ID)
+* In AC analysis, we find the frequency response, mid-band gain, bandwidth, and unity gain bandwidth of the amplifier.
+* In Transient analysis, to calculate gain
   
 
 # Results
@@ -116,6 +116,9 @@ Pmos : W= 144um
 
 Practical
 Pmos: W=333.5um
+
+Id=500.40uA
+Vout=1.0008V
 
 # DC Sweep
 <img width="1908" height="856" alt="Screenshot 2026-02-27 125419" src="https://github.com/user-attachments/assets/80b92e4a-94bd-40b9-9ef5-944018ab47f9" />
@@ -185,7 +188,7 @@ Bandwidt
 
 From simulation:
 
-Bandwidth ≈ 79.6 MHz
+Bandwidth = 79.6 MHz
 
 Unity Gain Bandwidth (UGB)
 
@@ -193,7 +196,7 @@ UGB = Av × BW
 
 UGB = 10.6 * 79.6 MHz
 
-UGB ≈ 843.76 MHz
+UGB = 843.76 MHz
 
 
 # Inference
