@@ -128,14 +128,72 @@ Input waveform
 Output waveform
 <img width="1908" height="860" alt="Screenshot 2026-02-27 125201" src="https://github.com/user-attachments/assets/05e1b6c8-50e7-4992-9009-17c9d10728d0" />
 
+Theoritical 
 
-Av = Vout/Vin
-Av = 212.936/19.997
-Av = 10.648
+ Transconductance value
 
+ gm = 2ID/VOV
+ 
+    = 2*500u/0.2
+    
+    =5mS
+
+ Av= gm*Rd
+ 
+   =5m*2k
+   
+   =10
+
+   Gain in decibles
+
+   Av(dB)=20log10(10)
+
+        =20dB
+
+   Practical
+   
+  Av = Vout/Vin
+  
+ Av = 212.936/19.997
+ 
+ Av = 10.648
+
+ Gain in decibles
+
+ Av(dB)=20log10(10.648)
+
+      =20.545dB
+      
+Therefore theoritical and practical values are almost equal
 
 # AC Analysis
 <img width="1917" height="848" alt="image" src="https://github.com/user-attachments/assets/1080b748-74e3-4632-a6ad-116bf9822a2b" />
+
+AC analysis is performed to find the frequency response, mid-band gain, bandwidth, and unity gain bandwidth of the amplifier.
+
+Mid-Band Gain
+
+From the AC frequency response graph:
+
+Gain ≈ 20.6 dB
+
+This is equivalent to:
+
+Av ≈ 10.6 V/V
+
+Bandwidt
+
+From simulation:
+
+Bandwidth ≈ 79.6 MHz
+
+Unity Gain Bandwidth (UGB)
+
+UGB = Av × BW
+
+UGB = 10.6 * 79.6 MHz
+
+UGB ≈ 843.76 MHz
 
 
 # Inference
