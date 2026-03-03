@@ -1,6 +1,6 @@
 # Experiment 1: CS Amplifier
 ## Aim
-To implement and analyze a PMOS-based Common Source amplifier in LTSpice using the TSMC 180 nm technology
+To implement and analyze a PMOS-based Common Source amplifier in LTSpice using the TSMC 180 nm technology.
 
 ## Theory
 A Common Source (CS) amplifier using a PMOS transistor is a single-stage voltage amplifier in which the source terminal is common to both input and output. In this arrangement, the input is applied to the gate, and the output is taken from the drain, while the source is tied to the supply voltage VDD.
