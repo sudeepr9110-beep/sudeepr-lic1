@@ -223,5 +223,22 @@ Av(dB) = 7.399 dB
 
 AC Analysis:
 
+<img width="1896" height="849" alt="Screenshot 2026-03-16 224828" src="https://github.com/user-attachments/assets/8671e4a8-d7b4-4b76-a482-5c8e298fca2a" />
+
+Midband Gain = 7.39 dB
+
+fH=39.62 MHz
+
+fL=0Hz
+
+BW = 39.62 MHz
+
+Inference:
+
+All MOSFETs operate in saturation region.
+
+AC and transient gains match closely.
+
+
 
 
