@@ -233,10 +233,11 @@ The experimentally obtained parameters of the µA741 operational amplifier are:
 * **Input Offset Voltage (Vio)**: 1.048 mV
 * **Slew Rate (SR)**: 0.471 V/µs
 
-These measured values are reasonably close to the standard datasheet values of the µA741 op-amp.
-
-
+These measured values are reasonably close to the standard datasheet values of the µA741 op-amp
 
 # Inference
 
-From this experiment, important characteristics of the µA741 operational amplifier were successfully evaluated. The measured values of input bias current, offset current, offset voltage, and slew rate closely match the expected datasheet specifications. Since the experiment was conducted under stable conditions, the influence of temperature and component variations was minimal. This confirms the reliability and suitability of the µA741 op-amp for low-frequency analog circuit applications.
+From this experiment, important characteristics of the µA741 operational amplifier were successfully evaluated. The measured values of input bias current, 
+offset current, offset voltage, and slew rate closely match the expected datasheet specifications. Since the experiment was conducted under stable conditions,
+the influence of temperature and component variations was minimal. This confirms the reliability and suitability of the µA741 op-amp for low-frequency analog
+circuit applications.
