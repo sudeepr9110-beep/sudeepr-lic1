@@ -157,6 +157,8 @@ Iio = 0.00638 µA
 
 ![p11](https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p11.png?raw=true)
 
+![p12](https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p12.png?raw=true)
+
 # Measurement of Input Offset Voltage (Vio)
 
 Input offset voltage is the small differential voltage that must be applied between the input terminals to make the output zero.
@@ -187,13 +189,13 @@ In millivolts:
 
 Vio ≈ 1.048 mV
 
-https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p13.png?raw=true
+![p13](https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p13.png?raw=true)
 
-https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p14.png?raw=true
+![p14](https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p14.png?raw=true)
 
-https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p15.png?raw=true
+![p15](https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p15.png?raw=true)
 
-https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p16.png?raw=true
+![p16](https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p16.png?raw=true)
 
 
 # Measurement of Slew Rate (SR)
