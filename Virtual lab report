@@ -1,0 +1,221 @@
+## EXPERIMENT – 03
+
+## Virtual Lab
+
+### Characterization and Parameter Extraction of the µA741 Operational Amplifier
+
+---
+
+## Aim
+
+The objective of this experiment is to determine the key parameters of the µA741 operational amplifier IC and compare the measured results with the standard specifications provided in its datasheet.
+
+---
+
+## Apparatus Required
+
+The following components and instruments are required:
+
+* µA741 IC
+* Dual DC power supply
+* Digital multimeter
+* Function generator / A.F. oscillator
+* CRO/DSO
+* Breadboard
+* Connecting wires
+
+---
+
+## Function Generator
+
+A function generator is an electronic instrument used to produce different types of waveforms such as sine, square, and triangular signals. These signals are essential for testing and analyzing the behavior of electronic circuits.
+
+---
+
+# Measurement of Inverting Bias Current (IB₁)
+
+  
+
+The inverting bias current (IB₁) is the current flowing into the inverting input terminal of the operational amplifier.
+
+## Procedure
+
+1. Place all the required components on the workstation.
+2. Connect the circuit as per the diagram for measuring inverting bias current.
+3. Verify all the connections carefully using the check option.
+4. Measure the output voltage using a digital multimeter.
+
+## Formula
+
+IB₁ = Vo / Rf
+
+## Given Values
+
+Vo = 0.024 V
+Rf = 470 kΩ = 470000 Ω
+
+## Calculation
+
+IB₁ = 0.024 / 470000
+IB₁ = 5.106 × 10⁻⁸ A
+
+In nanoamperes:
+
+IB₁ ≈ 51 nA
+
+---
+
+# Measurement of Non-Inverting Bias Current (IB₂)
+
+The non-inverting bias current (IB₂) is the current entering the non-inverting input terminal of the op-amp.
+
+## Procedure
+
+1. Construct the circuit as shown for non-inverting bias current measurement.
+2. Double-check all the connections.
+3. Measure the output voltage using a digital multimeter.
+
+## Formula
+
+IB₂ = Vo / R₁
+
+## Given Values
+
+Vo = -0.020 V
+R₁ = 470 kΩ = 470000 Ω
+
+## Calculation
+
+IB₂ = -0.020 / 470000
+IB₂ = -4.255 × 10⁻⁸ A
+
+Taking magnitude:
+
+IB₂ ≈ 42.6 nA
+
+---
+
+# Input Bias Current (IB)
+
+The input bias current is the average of the inverting and non-inverting bias currents.
+
+## Formula
+
+IB = (IB₁ + IB₂) / 2
+
+## Calculation
+
+IB = (51 + 42.6) / 2
+IB ≈ 46.8 nA
+
+---
+
+# Measurement of Input Offset Current (Iio)
+
+Input offset current is defined as the difference between the bias currents of the two input terminals.
+
+## Procedure
+
+1. Assemble the circuit as per the offset current measurement diagram.
+2. Ensure all connections are correct.
+3. Measure the output voltage using the digital multimeter.
+
+## Formula
+
+Iio = Vo / Rf
+
+## Given Values
+
+Vo = 0.003 V
+Rf = 470 kΩ = 470000 Ω
+
+## Calculation
+
+Iio = 0.003 / 470000
+Iio = 6.38 × 10⁻⁹ A
+
+Converted units:
+
+Iio = 6.38 nA
+Iio = 0.00638 µA
+
+---
+
+# Measurement of Input Offset Voltage (Vio)
+
+Input offset voltage is the small differential voltage that must be applied between the input terminals to make the output zero.
+
+## Procedure
+
+1. Connect the circuit as shown in the diagram.
+2. Verify the circuit connections.
+3. Measure the output voltage using a digital multimeter.
+
+## Formula
+
+Vio = Vo / (1 + Rf / Ri)
+
+## Given Values
+
+Vo = 0.106 V
+Rf = 100 kΩ
+Ri = 10 kΩ
+
+## Calculation
+
+Vio = 0.106 / (1 + 100k / 10k)
+Vio = 0.106 / 101
+Vio = 0.001048 V
+
+In millivolts:
+
+Vio ≈ 1.048 mV
+
+---
+
+# Measurement of Slew Rate (SR)
+
+Slew rate is the maximum rate at which the output voltage changes with time.
+
+## Procedure
+
+1. Set up the circuit for slew rate measurement.
+2. Apply an input signal using the function generator.
+3. Connect the input to Channel-1 and output to Channel-2 of the CRO.
+4. Increase the input frequency until the output waveform becomes triangular.
+5. Note this frequency as the maximum frequency (fmax).
+
+## Formula
+
+SR = (2π fmax Vm) / 10⁶ V/µs
+
+## Given Values
+
+Vm = 3 V
+fmax = 25 kHz = 25000 Hz
+
+## Calculation
+
+SR = (2π × 25000 × 3) / 10⁶
+SR ≈ 0.471 V/µs
+
+---
+
+# Result
+
+The experimentally obtained parameters of the µA741 operational amplifier are:
+
+* **Inverting Bias Current (IB₁)**: 51 nA
+* **Non-Inverting Bias Current (IB₂)**: 42.6 nA
+* **Input Bias Current (IB)**: 46.8 nA
+* **Input Offset Current (Iio)**: 6.38 nA
+* **Input Offset Voltage (Vio)**: 1.048 mV
+* **Slew Rate (SR)**: 0.471 V/µs
+
+These measured values are reasonably close to the standard datasheet values of the µA741 op-amp.
+
+---
+
+# Inference
+
+From this experiment, important characteristics of the µA741 operational amplifier were successfully evaluated. The measured values of input bias current, offset current, offset voltage, and slew rate closely match the expected datasheet specifications. Since the experiment was conducted under stable conditions, the influence of temperature and component variations was minimal. This confirms the reliability and suitability of the µA741 op-amp for low-frequency analog circuit applications.
