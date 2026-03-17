@@ -4,7 +4,6 @@
 
 ### Characterization and Parameter Extraction of the µA741 Operational Amplifier.
 
----
 
 ## Aim
 
@@ -156,7 +155,7 @@ Converted units:
 Iio = 6.38 nA
 Iio = 0.00638 µA
 
----
+
 
 # Measurement of Input Offset Voltage (Vio)
 
