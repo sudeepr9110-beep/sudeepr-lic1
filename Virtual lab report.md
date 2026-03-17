@@ -51,7 +51,7 @@ The inverting bias current (IB₁) is the current flowing into the inverting inp
 
 IB₁ = Vo / Rf
 
-https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p3.png?raw=true
+![p3](https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p3.png?raw=true)
 
 
 ## Given Values
@@ -68,11 +68,11 @@ In nanoamperes:
 
 IB₁ ≈ 51 nA
 
-https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p4.png?raw=true
+![p4](https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p4.png?raw=true)
 
-https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p5.png?raw=true
+![p5](https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p5.png?raw=true)
 
-https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p6.png?raw=true
+![p6](https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p6.png?raw=true)
 
 
 # Measurement of Non-Inverting Bias Current (IB₂)
@@ -103,11 +103,11 @@ Taking magnitude:
 
 IB₂ ≈ 42.6 nA
 
-https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p7.png?raw=true
+![p7](https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p7.png?raw=true)
 
-https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p8.png?raw=true
+![p8](https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p8.png?raw=true)
 
-https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p9.png?raw=true
+![p9](https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p9.png?raw=true)
 
 
 # Input Bias Current (IB)
@@ -153,9 +153,9 @@ Converted units:
 Iio = 6.38 nA
 Iio = 0.00638 µA
 
-https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p10.png?raw=true
+![p10](https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p10.png?raw=true)
 
-https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p11.png?raw=true
+![p11](https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p11.png?raw=true)
 
 # Measurement of Input Offset Voltage (Vio)
 
