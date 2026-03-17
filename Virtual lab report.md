@@ -32,7 +32,7 @@ A function generator is an electronic instrument used to produce different types
 
 # Measurement of Inverting Bias Current (IB₁)
 
-https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p1.png?raw=true
+![p1](https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p1.png?raw=true)
 
 https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p2.png?raw=true
 
