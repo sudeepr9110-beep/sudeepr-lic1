@@ -9,7 +9,6 @@
 
 The objective of this experiment is to determine the key parameters of the µA741 operational amplifier IC and compare the measured results with the standard specifications provided in its datasheet.
 
----
 
 ## Apparatus Required
 
@@ -23,13 +22,13 @@ The following components and instruments are required:
 * Breadboard
 * Connecting wires
 
----
+
 
 ## Function Generator
 
 A function generator is an electronic instrument used to produce different types of waveforms such as sine, square, and triangular signals. These signals are essential for testing and analyzing the behavior of electronic circuits.
 
----
+
 
 # Measurement of Inverting Bias Current (IB₁)
 
@@ -124,7 +123,6 @@ IB = (IB₁ + IB₂) / 2
 IB = (51 + 42.6) / 2
 IB ≈ 46.8 nA
 
----
 
 # Measurement of Input Offset Current (Iio)
 
@@ -195,8 +193,8 @@ https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p14.png?raw=true
 
 https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p15.png?raw=true
 
+https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p16.png?raw=true
 
----
 
 # Measurement of Slew Rate (SR)
 
@@ -224,8 +222,6 @@ fmax = 25 kHz = 25000 Hz
 SR = (2π × 25000 × 3) / 10⁶
 SR ≈ 0.471 V/µs
 
----
-
 # Result
 
 The experimentally obtained parameters of the µA741 operational amplifier are:
@@ -239,7 +235,7 @@ The experimentally obtained parameters of the µA741 operational amplifier are:
 
 These measured values are reasonably close to the standard datasheet values of the µA741 op-amp.
 
----
+
 
 # Inference
 
