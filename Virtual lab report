@@ -53,6 +53,9 @@ The inverting bias current (IB₁) is the current flowing into the inverting inp
 
 IB₁ = Vo / Rf
 
+https://github.com/sudeepr9110-beep/sudeepr-lic1/blob/main/p3.png?raw=true
+
+
 ## Given Values
 
 Vo = 0.024 V
