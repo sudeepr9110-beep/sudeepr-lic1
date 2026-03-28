@@ -75,9 +75,6 @@ W = (2·ID·L) / (unCox·Vov²) =	(2 × 0.61mA × 540nm) / (230.3µA × 0.334²)
 <img width="772" height="566" alt="Screenshot 2026-03-28 223150" src="https://github.com/user-attachments/assets/754cc548-2440-4a65-b339-185118ab83b9" />
 
 
-<img width="590" height="550" alt="image" src="https://github.com/user-attachments/assets/630399fb-a218-4941-aa84-e49a2268c95e" />
-
-
 ### **Observations**
 
 * Equal drain currents → symmetry
