@@ -168,6 +168,8 @@ A_{v} = 4.07 * 10^{-3} * 1350 = approx 5.5
 # **Step 5: Transient Analysis**
 
 
+<img width="1915" height="1084" alt="image" src="https://github.com/user-attachments/assets/bc3174a0-def8-46b9-aec4-61057c946238" />
+
   
 ### **Case 1: Small Input**
 
@@ -175,7 +177,8 @@ A_{v} = 4.07 * 10^{-3} * 1350 = approx 5.5
 Vid < sqrt{2}VOV
 ]
 
-<img width="1915" height="1084" alt="image" src="https://github.com/user-attachments/assets/98f3ab44-3ad7-45d8-ace7-b008ebcfb6f3" />
+<img width="1363" height="589" alt="image" src="https://github.com/user-attachments/assets/a9a22b2e-f389-460e-bcd7-12ff7ba95ca3" />
+
 
 
 **Observation:**
