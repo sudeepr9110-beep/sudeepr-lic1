@@ -2,6 +2,8 @@
 
 ## **Differential Amplifier Analysis**
 
+## **Circuit 1
+
 
 
 ## **Aim**
@@ -69,6 +71,9 @@ W = (2·ID·L) / (unCox·Vov²) =	(2 × 0.61mA × 540nm) / (230.3µA × 0.334²)
 # **Step 1: DC Analysis**
 
 ### **Operating Point**
+
+<img width="772" height="566" alt="Screenshot 2026-03-28 223150" src="https://github.com/user-attachments/assets/754cc548-2440-4a65-b339-185118ab83b9" />
+
 
 <img width="590" height="550" alt="image" src="https://github.com/user-attachments/assets/630399fb-a218-4941-aa84-e49a2268c95e" />
 
@@ -248,3 +253,198 @@ The MOS differential amplifier operates correctly within the specified condition
 It provides linear amplification for small input signals and shows non-linear behavior
 for large inputs. The simulation results are in good agreement with theoretical 
 expectations.
+
+
+## **Circuit 2**
+
+##  Aim
+
+To design and analyze a CMOS differential amplifier using an active load, determine its DC operating point, and evaluate its performance in terms of gain, linearity, and frequency response using LTspice.
+
+
+##  Introduction
+
+A differential amplifier is a fundamental analog building block used to amplify the difference between two input signals while rejecting common-mode signals. It is widely used in operational amplifiers, comparators, and communication circuits.
+
+In this design, a PMOS current mirror is used as an active load instead of resistors. This approach improves gain, enhances output resistance, reduces power consumption, and is highly suitable for integrated circuit implementation.
+
+
+##  Circuit Description
+
+<img width="1233" height="920" alt="image" src="https://github.com/user-attachments/assets/0b67d802-b7b0-4824-9eba-df8a35eb6516" />
+
+The circuit consists of:
+
+- **M1, M2** → NMOS differential pair  
+- **M3, M4** → PMOS current mirror (active load)  
+- **M5** → Tail current source  
+
+###  Working Principle
+
+- A constant current is provided by the tail transistor (M5)  
+- The current splits between M1 and M2 based on input difference  
+- PMOS current mirror converts differential current into output voltage  
+- Outputs are taken from the drain terminals  
+
+## Given Parameters
+
+| Parameter | Value |
+|----------|------|
+| VDD | 0.9 V |
+| VSS | -0.9 V |
+| Power (P) | 2.2 mW |
+| Threshold Voltage (V_T) | ≈ 0.4 V |
+| Overdrive Voltage (V_ov) | ≈ 0.39 V |
+| Channel Length (L) | 540 nm |
+
+
+##  Design Calculations
+
+###  Tail Current
+
+[
+I_{SS} = {P} / {V_{DD} - V_{SS}} = {2.2{ mW} / {1.8 V} = approx 1.22mA
+]
+
+###  Branch Current
+
+[
+I_D = {I_{SS}} / {2} = approx 0.61mA
+]
+
+
+###  Bias Voltage
+
+[
+V_{GS} = V_T + V_{ov} = 0.34 + 0.3 = 0.64V
+]
+
+[
+V_B = V_S + V_{GS} = -0.9 + 0.64 = approx -0.26V
+]
+
+##  DC Operating Point Analysis
+
+###  Simulation Results
+
+- Tail current ( I_{SS} = approx 1.23 mA )  
+- Branch currents ( I_{D1} = I_{D2} = approx 0.615 mA )  
+- Output voltages ( V_{out1} = V_{out2} = approx -0.055 V)  
+- Source node voltage ( V_p =approx -0.724 V)
+
+###  Interpretation
+
+- Equal current distribution confirms proper symmetry  
+- Equal outputs indicate zero differential input  
+- All transistors operate in saturation region  
+- Circuit is correctly biased and stable  
+
+
+##  Input Common Mode Range (ICMR)
+
+###  Minimum Value
+
+[
+V_{ICM(min)} = V_S + V_T = -0.6 + 0.4 = -0.2V
+]
+
+
+###  Maximum Value
+
+[
+V_{ICM(max)} = V_D - V_{ov} = 0.6 - 0.3 = 0.3 V
+]
+
+
+### Final Range
+
+[
+-0.2 V <= V_ICM <= 0.3 V
+]
+
+
+##  Differential Input Range (Linearity)
+
+[
+Vid(max) ​= sqrt 2 * Vov ​= 0.42 V
+]
+
+- Linear operation: ( |V_{id}| < 0.42 V )  
+- Nonlinear operation: ( |V_{id}| > 0.42 V )
+
+
+##  Transient Analysis
+
+###  Case 1: Small Signal
+
+(a) Case 1: V_id < √2 V_ov
+
+- ( V_{id} = 20 mV)
+
+**Observation:**
+- Output is sinusoidal  
+- No distortion  
+- 180° phase difference  
+
+ Circuit operates in linear region  
+
+
+###  Case 2: Large Signal
+
+(b) Case 2: V_id > √2 V_ov
+
+- ( V_{id} = 600 mV)
+
+- <img width="1912" height="486" alt="image" src="https://github.com/user-attachments/assets/f02251f7-0d80-4ae4-9f29-de694d6fb2e3" />
+
+
+**Observation:**
+- Output waveform is distorted  
+- Clipping occurs  
+- One transistor dominates conduction  
+
+Circuit operates in nonlinear region  
+
+##  AC Analysis
+
+<img width="1883" height="473" alt="image" src="https://github.com/user-attachments/assets/959a0f21-b6c1-47b4-8db9-ed5a22cd76b0" />
+
+###  Midband Gain
+
+[
+A_v = 6 dB 
+
+Convert to linear:
+
+A_v = 10^(6/20) = 2
+]
+
+
+###  Cutoff Frequencies
+
+- Lower cutoff frequency ≈ 0 Hz  
+- Upper cutoff frequency ≈ 3–5 GHz  
+
+
+###  Bandwidth
+
+[
+BW = 4 GHz
+]
+
+
+##  Key Points
+
+- Active load increases gain due to high output resistance  
+- Current mirror improves matching and efficiency  
+- Differential operation reduces noise  
+- High bandwidth indicates suitability for high-speed applications  
+
+
+
+##  Conclusion
+
+The CMOS differential amplifier with active load is successfully designed and analyzed. The circuit operates with proper biasing and symmetry, ensuring equal current distribution under balanced conditions. It achieves a midband gain of approximately 6 dB and exhibits a wide bandwidth in the GHz range. The amplifier behaves linearly for small differential inputs and becomes nonlinear for large signals. Overall, the design demonstrates efficient and stable performance suitable for modern analog integrated circuits.
+
+
+
