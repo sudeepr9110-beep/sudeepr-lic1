@@ -190,6 +190,10 @@ Vid < sqrt{2}VOV
 Vid> qrt{2}V_{OV}
 ]
 
+
+<img width="1353" height="584" alt="image" src="https://github.com/user-attachments/assets/4f0d6801-1dc0-4c04-b83b-7469dd65e08e" />
+
+
 **Observation:**
 
 * Output becomes distorted
@@ -204,6 +208,14 @@ Vid> qrt{2}V_{OV}
 
 
 # **Step 6: AC Analysis**
+
+
+<img width="1914" height="991" alt="image" src="https://github.com/user-attachments/assets/c250245d-b920-4e8a-89c3-ffcd57f74020" />
+
+
+<img width="1348" height="317" alt="image" src="https://github.com/user-attachments/assets/17a1a4b3-0cc6-4320-838e-4156b26e1ed3" />
+
+
 
 # Midband Gain
 
@@ -230,6 +242,10 @@ Upper cutoff frequency (from graph):
 f_{H} = 316.2MHz
 
 # Bandwidth
+
+
+<img width="1353" height="670" alt="image" src="https://github.com/user-attachments/assets/41bf5824-e88d-4538-860f-c63e53bfbe6c" />
+
 
 BW = f_{H} - f_{L} = approx 316.2MHz}
 
