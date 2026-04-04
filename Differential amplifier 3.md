@@ -69,14 +69,17 @@ VTHp ≈ -0.4 V
 
 ### DC Summary  
 
-| Parameter | Value |
-|----------|------|
-| VDD | 1.8 V |
-| Tail Current | 1 mA |
-| ID1 | 0.5 mA |
-| ID2 | 0.5 mA |
-| Output Voltage | ≈ 0.9 V |
-| Region | Saturation |
+ VDD = 1.8 V 
+ 
+ Tail Current = 1 mA 
+ 
+ ID1 = 0.5 mA 
+ 
+ ID2 = 0.5 mA 
+ 
+ Output Voltage  = 0.9 V 
+ 
+ Region = Saturation 
 
 
 ##  2. AC Analysis  
